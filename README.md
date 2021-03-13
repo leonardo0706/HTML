@@ -1,3 +1,1 @@
-# HTML
-
-Projetos simples em HTML e CSS para testar meus conhecimentos.
+# Projetos simples em HTML e CSS para testar meus conhecimentos.
