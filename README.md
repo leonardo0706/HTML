@@ -1,1 +1,2 @@
-# MINHA VERSÃO DA PÁGINA DE DOCUMENTAÇÃO DA LINGUAGEM JAVASCRIPT
+# Projetos simples em HTML e CSS para testar meus conhecimentos.
+
