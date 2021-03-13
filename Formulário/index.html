@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Pesquisa</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Formulário de Pesquisa</h1>
+            <p id="description">Obrigado por nos ajudar a melhorar a plataforma</p>
+
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Entre com seu Email" required>
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Nome</label>
+                <input type="name" name="name" id="name" class="form-control" placeholder="Entre com seu Nome" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Idade</label>
+                <input type="number" name="number" id="number" min="10" max="99" class="form-control" placeholder="Idade">
+            </div><br>
+            <p>Qual opção descreve melhor sua função atual?</p>
+            <select name="role" id="dropdown" class="form-control" required>
+                <option disabled selected value>Selecione sua função atual</option>
+                <option value="student">Estudante</option>
+                <option value="job">Trabalho o tempo todo</option>
+                <option value="learner">Tempo livre para aprender</option>
+                <option value="preferNo">Prefiro não dizer</option>
+                <option value="other">Outro</option>
+            </select><br>
+            <div class="form-group">
+                <p>Você indicaria a plataforma para um amigo?</p>
+                <label>
+                    <input name="user-recomend" value="definitely" type="radio" class="input-radio" checked>
+                    Definitivamente
+                </label><br>
+                <label>
+                    <input name="user-recomend" value="maybe" type="radio" class="input-radio">
+                    Talvez
+                </label><br>
+                <label>
+                    <input name="user-recomend" value="not-sure" type="radio" class="input-radio">
+                    Não tenho certeza
+                </label>
+            </div><br>
+            <div class="form-group">
+                <p>Qual é o seu recurso preferido na plataforma?</p>
+                <select name="mostLike" id="mostLike" class="form-control" required>
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="challenges">Desafios</option>
+                    <option value="projects">Projetos</option>
+                    <option value="community">Comunidade</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div><br>
+            <div class="form-group">
+                <p>O que você gostaria de ver melhorado?</p>
+                <span style="text-decoration: underline;">Marque uma ou mais opções</span><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">
+                    Projetos Front-End
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbox">
+                    Projetos Back-End
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="data-visualization" class="input-checkbox">
+                    Data Visualization
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="challenges" class="input-checkbox">
+                    Desafios
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="open-source-community" class="input-checkbox">
+                    Comunidade Open Source
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="gitter help rooms" class="input-checkbox">
+                    Salas de ajuda
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="videos" class="input-checkbox">
+                    Vídeos
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="city-meetups" class="input-checkbox">
+                    Encontros
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="wiki" class="input-checkbox">
+                    Wiki
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="forum" class="input-checkbox">
+                    Forum
+                </label><br>
+                <label>
+                    <input type="checkbox" name="prefer" value="additional Courses" class="input-checkbox">
+                    Cursos adicionais
+                </label><br>
+            </div><br>
+            <div class="form-group">
+                <p>Tem alguma sugestão?</p>
+                <textarea name="textarea" id="" cols="60" rows="5" placeholder="Coloque sua sugestão aqui!"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn btn-success" style="width: 60%; margin: 0 0 1% 10%;">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
